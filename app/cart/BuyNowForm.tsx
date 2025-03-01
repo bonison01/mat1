@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import { supabase } from '../../lib/supabaseClient';
 import { useRouter } from 'next/navigation';
+import "./Cart.css"
 
 interface CartItem {
   id: number;
@@ -118,6 +119,7 @@ const BuyNowForm: React.FC<BuyNowFormProps> = ({ items, totalPrice, onClose, onO
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
+    height: '99vh',
   };
 
   const formStyles: React.CSSProperties = {
@@ -127,6 +129,8 @@ const BuyNowForm: React.FC<BuyNowFormProps> = ({ items, totalPrice, onClose, onO
     borderRadius: '0.5rem',
     boxShadow: '0 4px 6px rgba(0, 0, 0, 0.6)',
     width: '24rem',
+    height: "85vh",
+    overflowY: "auto",
   };
 
   const inputStyles: React.CSSProperties = {
@@ -165,7 +169,7 @@ const BuyNowForm: React.FC<BuyNowFormProps> = ({ items, totalPrice, onClose, onO
 
   return (
     <div style={containerStyles}>
-      <div style={formStyles}>
+      <div style={formStyles} className='custom-scrollbar'>
         <h2 style={{ fontSize: '1.25rem', fontWeight: 'bold', marginBottom: '1rem' }}>
           Buy All Items
         </h2>

@@ -1,0 +1,7 @@
+.custom-scrollbar::-webkit-scrollbar {
+    width: 0;
+  }
+  .custom-scrollbar {
+    scrollbar-width: none;  
+    -ms-overflow-style: none; 
+  }

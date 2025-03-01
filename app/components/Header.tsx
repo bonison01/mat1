@@ -69,7 +69,7 @@ const Header: React.FC = () => {
             <Link href="/discover" className={styles.navButton} onClick={() => setMenuOpen(false)}>
               Discover
             </Link>
-            <Link href="/delivery-rates" className={styles.navButton} onClick={() => setMenuOpen(false)}>
+            <Link href="/book" className={styles.navButton} onClick={() => setMenuOpen(false)}>
               Delivery Rates
             </Link>
             <Link href="/delivery_orders" className={styles.navButton} onClick={() => setMenuOpen(false)}>
@@ -107,7 +107,7 @@ const Header: React.FC = () => {
             <Link href="/discover" className={styles.navButton} onClick={() => setMenuOpen(false)}>
               Discover
             </Link>
-            <Link href="/delivery-rates" className={styles.navButton} onClick={() => setMenuOpen(false)}>
+            <Link href="/book" className={styles.navButton} onClick={() => setMenuOpen(false)}>
               Delivery Rates
             </Link>
             <Link href="/searchOrders" className={styles.navButton} onClick={() => setMenuOpen(false)}>

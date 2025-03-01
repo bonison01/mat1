@@ -299,13 +299,12 @@ const DistanceCalculator = () => {
       <div className={styles.inputSection}>
         <div className={styles.inputGroup}>
           <label>Pickup Details</label>
-          <textarea
+          {/* <textarea
             value={pickupDetails}
             onChange={(e) => setPickupDetails(e.target.value)}
             className={styles.textarea}
             placeholder="Enter pickup details(Name, Phone)"
-          />
-        </div>
+          /> */}
         
         <div className={styles.inputGroup}>
           <input
@@ -317,37 +316,37 @@ const DistanceCalculator = () => {
             }}
             className={styles.input}
             placeholder="Enter Pickup Address"
-          />
+            />
           {showOriginSuggestions && (
             <ul className={styles.suggestionsList}>
               {originSuggestions.map((suggestion, index) => (
                 <li
-                  key={index}
-                  className={styles.suggestionItem}
-                  onClick={() => {
-                    setOrigin(suggestion.description);
-                    setOriginCoords({
-                      lat: suggestion.latitude,
-                      lng: suggestion.longitude,
-                    });
-                    setShowOriginSuggestions(false);
-                  }}
+                key={index}
+                className={styles.suggestionItem}
+                onClick={() => {
+                  setOrigin(suggestion.description);
+                  setOriginCoords({
+                    lat: suggestion.latitude,
+                    lng: suggestion.longitude,
+                  });
+                  setShowOriginSuggestions(false);
+                }}
                 >
                   {suggestion.description}
                 </li>
               ))}
             </ul>
           )}
+          </div>
         </div>
         <div className={styles.inputGroup}>
           <label>Drop Details</label>
-          <textarea
+          {/* <textarea
             value={dropDetails}
             onChange={(e) => setDropDetails(e.target.value)}
             className={styles.textarea}
             placeholder="Enter drop details(Name, Phone)"
-          />
-        </div>
+          /> */}
 
         <div className={styles.inputGroup}>
           <input
@@ -359,7 +358,7 @@ const DistanceCalculator = () => {
             }}
             className={styles.input}
             placeholder="Enter drop details"
-          />
+            />
           {showDestinationSuggestions && (
             <ul className={styles.suggestionsList}>
               {destinationSuggestions.map((suggestion, index) => (
@@ -380,6 +379,7 @@ const DistanceCalculator = () => {
               ))}
             </ul>
           )}
+          </div>
         </div>
 
 
@@ -390,16 +390,16 @@ const DistanceCalculator = () => {
         {distance && <p className={styles.distance}>Distance: {distance}</p>}
         {deliveryCharge && <p className={styles.deliveryCharge}>Delivery Fare: {deliveryCharge}</p>}
 
-        <button onClick={() => {
+        {/* <button onClick={() => {
           storeDataInSupabase();  // Store data in Supabase
           sendDataToTelegram();  // Send data to Telegram
         }} className={styles.button}>
           Confirm Order
-        </button>
+        </button> */}
         <br /><br />
-        <h3 className={styles.heading}>Please calculate the fare and confirm your booking. For standard orders, click the link below.</h3>
+        {/* <h3 className={styles.heading}>Please calculate the fare and confirm your booking. For standard orders, click the link below.</h3> */}
         <div>
-        <Link href="/standard.pdf" className={styles.links}>Standard delivery rates.</Link>
+        <Link href="/standard.pdf" className={styles.links} style={{color: '#71f386', textDecoration: "underline"}}>Standard delivery rates.</Link>
       </div>
       </div>
 
