@@ -11,7 +11,7 @@ npm run dev
 yarn dev
 # orsdaf
 pnpm dev
-# or
+# ords
 bun dev
 check
 ```

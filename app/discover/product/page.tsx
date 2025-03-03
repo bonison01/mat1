@@ -230,13 +230,6 @@ const AllProductMediaPage = () => {
                       <h3 className="text-sm mb-1 line-through">MRP:{product.price_inr}</h3>
                       <h4 className="text-sm mb-1">Discount Price: Rs. {product.discounted_price}</h4>
                     </div>
-                    <button
-                      className={styles.buyNowButton}
-                      onClick={() => handleAddToCart(product)} // Add to Cart action
-                      aria-label="Add to Cart"
-                    >
-                      Add to Cart🛒
-                    </button>
                     <div className={styles.actionIcons}>
                       {product.phone && (
                         <button className={styles.callIcon} onClick={() => handleCall(product.phone)} aria-label="Call">

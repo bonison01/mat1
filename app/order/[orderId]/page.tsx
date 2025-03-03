@@ -83,7 +83,8 @@ const OrderPage: React.FC = () => {
       </div>
 
       <div style={{ fontSize: '1.25rem', marginTop: '1rem' }}>
-        <strong>Total amount including handling and delivery (if applicable):</strong> ₹{total_calculated_price}
+        <strong>Total amount including handling and delivery:</strong> ₹{total_calculated_price}
+        <p>Our team will reach out to you soon.</p>
       </div>
     </div>
   );

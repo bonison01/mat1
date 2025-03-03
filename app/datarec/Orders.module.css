@@ -1,0 +1,159 @@
+/* Orders.module.css */
+
+.container {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .title {
+    text-align: center;
+    color: #fff;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .table th,
+  .table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #444;
+  }
+  
+  .table th {
+    background-color: #333;
+  }
+  
+  .table tr:nth-child(even) {
+    background-color: #222;
+  }
+  
+  .table input {
+    background-color: #333;
+    color: white;
+    border: 1px solid #555;
+    padding: 8px;
+    width: 100%;
+    border-radius: 4px;
+  }
+  
+  .table input:focus {
+    outline: none;
+    border-color: #77d1e8;
+    background-color: #444;
+  }
+  
+  .button {
+    background-color: #77d1e8;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #55a9c9;
+  }
+  
+  .button:focus {
+    outline: none;
+  }
+  
+  .input[type="text"] {
+    background-color: #333;
+    color: white;
+    border: 1px solid #555;
+  }
+  
+  .input[type="number"] {
+    background-color: #333;
+    color: white;
+    border: 1px solid #555;
+  }
+  
+  .div {
+    margin-bottom: 20px;
+  }
+  
+  .input[type="text"],
+  .button {
+    margin-right: 10px;
+  }
+  
+  .input[type="text"] {
+    width: 200px;
+    padding: 8px;
+    background-color: #333;
+    color: white;
+    border: 1px solid #555;
+    border-radius: 4px;
+  }
+  
+  .input[type="text"]:focus {
+    outline: none;
+    border-color: #77d1e8;
+    background-color: #444;
+  }
+  
+  .p {
+    color: #fff;
+    text-align: center;
+  }
+  /* Add these styles for the search functionality */
+
+.searchContainer {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center; /* Center align the search box */
+  }
+  
+  .searchInput {
+    background-color: #333;
+    color: white;
+    border: 1px solid #555;
+    padding: 10px;
+    width: 300px;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  .searchInput:focus {
+    outline: none;
+    border-color: #77d1e8;
+    background-color: #444;
+  }
+  /* Add styles for the category filter dropdown */
+
+.categoryFilter {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .categorySelect {
+    background-color: #333;
+    color: white;
+    border: 1px solid #555;
+    padding: 10px;
+    width: 300px;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  .categorySelect:focus {
+    outline: none;
+    border-color: #77d1e8;
+    background-color: #444;
+  }
+  
+  
