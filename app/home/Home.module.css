@@ -3,7 +3,7 @@
   display: flex;
   justify-content: center;
   align-items: flex-start; /* Start alignment for content */
-  height: 80vh; /* Full viewport height */
+  height: calc(100vh-4rem); /* Full viewport height */
   color: white;
   padding: 20px;
   box-sizing: border-box;

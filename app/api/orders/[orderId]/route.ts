@@ -30,5 +30,4 @@ export async function GET(req: NextRequest) {
     console.error('Failed to fetch order details:', error.message);
     return NextResponse.json({ error: 'Failed to fetch order details' }, { status: 500 });
   }
-  
 }
